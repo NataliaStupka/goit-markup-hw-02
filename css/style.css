@@ -1,0 +1,141 @@
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --background-button-secondary: #f5f4fa;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+}
+
+/* основной цвет текста #757575 */
+/* цвет заглавия #212121 */
+/* фон второй кнопки  #F5F4FA*/
+/* цвет акцент (синей подсветки) #2196F3 */
+/* белый цвет #FFFFFF */
+
+/* цвет логотипа Web #2196F3, Studio #000000 */
+/* адресс в footer color: rgba(255, 255, 255, 0.6*)/
+/* добавить/заменить фон кнопки .button.primary на :hover для основной кнопки #188CE8 */
+/* фон героя 2F303A */
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+/* возможно, поменять цвет текста */
+body {
+  /* color: var(--primery-text-color); */
+  background-color: var(--white-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Logo */
+.logo {
+  font-family: 'Raleway', sans-serif;
+
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.logo span {
+  color: #2196f3;
+}
+
+/* ========== HEDER ========== */
+
+.menu-item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.menu-item.current {
+  color: var(--accent-color);
+}
+
+.contact-mail,
+.contact-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primery-text-color);
+}
+
+.contact-mail:hover,
+.contact-mail:focus {
+  color: var(--accent-color);
+}
+.contact-tel:hover,
+.contact-tel:focus {
+  color: var(--accent-color);
+/* ========== END HEDER ==========  */
+
+/* ========== BUTTON ========== */
+
+.button {
+
+}
+
+.button.primary {
+  color: #ffffff;
+  background-color: var(--accent-color);
+
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.button.primary:hover,
+.button.primary:focus {
+  background-color: #188ce8;
+}
+
+.button.secondary {
+  color: var(--title-text-color);
+  background-color: var(--background-button-secondary);
+
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+.button.secondary:hover,
+.button.secondary:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+/* ========== END BUTTON ========== */
+
+/* ========== MAIN ========== */
+
+.hero {
+  background-color: #2f303a;
+}
+
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+/* ========== END MAIN ========== */
