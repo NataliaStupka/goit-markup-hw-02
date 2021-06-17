@@ -28,6 +28,7 @@
 /* возможно, поменять цвет текста */
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: var(--white-color);
 }
 
 /* Logo */
@@ -85,7 +86,7 @@ body {
 
 /* ========== BUTTON ========== */
 
-.button .primary {
+.main-button {
   color: #ffffff;
   background-color: var(--accent-color);
 
@@ -98,12 +99,12 @@ body {
   letter-spacing: 0.06em;
 }
 
-.button.primary:hover,
-.button.primary:focus {
+.main-button:hover,
+.main-button:focus {
   background-color: #188ce8;
 }
 
-.button.secondary {
+.button-secondary {
   color: var(--title-text-color);
   background-color: var(--background-button-secondary);
 
@@ -113,25 +114,29 @@ body {
   line-height: 1.62;
   letter-spacing: 0.03em;
 }
-.button.secondary:hover,
-.button.secondary:focus {
+.button-secondary:hover,
+.button-secondary:focus {
   color: #ffffff;
   background-color: var(--accent-color);
 }
 
+.button-secondary.current {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
 /* ========== END BUTTON ========== */
 
 /* ========== MAIN ========== */
 
 .hero {
   background-color: var(--background-footer-hero);
+  text-align: center;
 }
 
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -209,7 +214,7 @@ body {
   background-color: var(--background-footer-hero);
 }
 .logo-footer {
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
