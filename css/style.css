@@ -7,17 +7,6 @@
   --background-footer-hero: #2f303a;
 }
 
-/* основной цвет текста #757575 */
-/* цвет заглавия #212121 */
-/* фон второй кнопки  #F5F4FA*/
-/* цвет акцент (синей подсветки) #2196F3 */
-/* белый цвет #FFFFFF */
-
-/* цвет логотипа Web #2196F3, Studio #000000 */
-/* адресс в footer color: rgba(255, 255, 255, 0.6*)/
-/* добавить/заменить фон кнопки .button.primary на :hover для основной кнопки #188CE8 */
-/* фон героя 2F303A */
-
 .list {
   list-style: none;
 }
@@ -34,7 +23,6 @@ body {
 /* Logo */
 .logo {
   font-family: 'Raleway', sans-serif;
-
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -42,7 +30,7 @@ body {
 }
 
 .logo span {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* ========== HEDER ========== */
@@ -222,7 +210,7 @@ body {
   color: #ffffff;
 }
 .logo-footer span {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .footer-address {
   font-style: normal;
