@@ -4,6 +4,7 @@
   --background-button-secondary: #f5f4fa;
   --accent-color: #2196f3;
   --white-color: #ffffff;
+  --background-footer-hero: #2f303a;
 }
 
 /* основной цвет текста #757575 */
@@ -26,8 +27,6 @@
 
 /* возможно, поменять цвет текста */
 body {
-  /* color: var(--primery-text-color); */
-  background-color: var(--white-color);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -60,6 +59,11 @@ body {
   color: var(--accent-color);
 }
 
+.menu-item:hover,
+.menu-item:focus {
+  color: var(--accent-color);
+}
+
 .contact-mail,
 .contact-tel {
   font-weight: 500;
@@ -76,15 +80,12 @@ body {
 .contact-tel:hover,
 .contact-tel:focus {
   color: var(--accent-color);
+}
 /* ========== END HEDER ==========  */
 
 /* ========== BUTTON ========== */
 
-.button {
-
-}
-
-.button.primary {
+.button .primary {
   color: #ffffff;
   background-color: var(--accent-color);
 
@@ -96,6 +97,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
 }
+
 .button.primary:hover,
 .button.primary:focus {
   background-color: #188ce8;
@@ -122,9 +124,8 @@ body {
 /* ========== MAIN ========== */
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--background-footer-hero);
 }
-
 
 .hero-title {
   font-weight: 900;
@@ -139,3 +140,118 @@ body {
 }
 
 /* ========== END MAIN ========== */
+
+/* ========== ПРЕИМУЩЕСТВА (dignity) ========== */
+.dignity-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.dignity-text {
+  color: var(--primery-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/* ========== END ПРЕИМУЩЕСТВА (dignity) ========== */
+
+/* ========== PROFILE (чем мы занимаемся) ========== */
+.profile-titel {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* ========== END PROFILE (чем мы занимаемся) ========== */
+
+/* ========== TEAM ========== */
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-name {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-profession {
+  color: var(--primery-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* ========== END TEAM ========== */
+
+/* ========== FOOTER ========== */
+.footer {
+  background-color: var(--background-footer-hero);
+}
+.logo-footer {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.logo-footer span {
+  color: #2196f3;
+}
+.footer-address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-mail {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-tel {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-mail:hover,
+.footer-mail:focus {
+  color: #ffffff;
+}
+
+.footer-tel:hover,
+.footer-tel:focus {
+  color: #ffffff;
+}
+
+/* ========== END FOOTER ========== */
